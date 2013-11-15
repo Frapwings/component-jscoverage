@@ -1,6 +1,6 @@
 # component-jscoverage
 
-[![Build Status](https://travis-ci.org/Frapwings/component-jscoverage.png?branch=master)](https://travis-ci.org/Frapwings/component-jscoverage) [![Coverage Status](https://coveralls.io/repos/Frapwings/component-jscoverage/badge.png)](https://coveralls.io/r/Frapwings/component-jscoverage) [![NPM version](https://badge.fury.io/js/component-jscoverage.png)](http://badge.fury.io/js/component-jscoverage)
+[![Build Status](https://travis-ci.org/Frapwings/component-jscoverage.png?branch=master)](https://travis-ci.org/Frapwings/component-jscoverage) [![Coverage Status](https://coveralls.io/repos/Frapwings/component-jscoverage/badge.png)](https://coveralls.io/r/Frapwings/component-jscoverage) [![NPM version](https://badge.fury.io/js/component-jscoverage.png)](http://badge.fury.io/js/component-jscoverage) [![Dependency Status](https://david-dm.org/Frapwings/component-jscoverage.png)](https://david-dm.org/Frapwings/component-jscoverage)
 
 jscoverage plugin for component-builder
 
