@@ -7,14 +7,14 @@ jscoverage plugin for component-builder
 # Installing
 
 ```
-npm install component-jscoverage
+$ npm install component-jscoverage
 ```
 
 # Usage
 
 To enable jscoverage of your scripts, run the following code.
 
-```
+```js
 var Builder = require('component-builder');
 var jscover = require('component-jscoverage');
 var fs = require('fs');
@@ -34,7 +34,7 @@ builder.build(function (err, build) {
 Or from the command line.
 
 ```
-component build --use component-jscoverage
+$ component build --use component-jscoverage
 ```
 
 # Testing
