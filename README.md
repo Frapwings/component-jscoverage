@@ -1,6 +1,7 @@
 # component-jscoverage
 
 [![Build Status](https://travis-ci.org/Frapwings/component-jscoverage.png?branch=master)](https://travis-ci.org/Frapwings/component-jscoverage)
+[![NPM version](https://badge.fury.io/js/component-jscoverage.png)](http://badge.fury.io/js/component-jscoverage)
 
 jscoverage plugin for component-builder
 
