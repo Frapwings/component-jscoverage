@@ -1,4 +1,5 @@
 node_modules
 components
+coverage.html
 *.swp
 .DS_Store

@@ -1,0 +1,8 @@
+.git
+.gitignore
+.travis.yml
+.DS_Store
+lib-cov
+node_modules
+coverage.html
+npm-debug.log
