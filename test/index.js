@@ -13,4 +13,8 @@ var jscover = require('../');
  * test(s)
  */
 describe('component-jsoverage', function () {
+  it('should be true', function (done) {
+    expect(true).to.eql(true);
+    done();
+  });
 });

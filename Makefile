@@ -12,7 +12,7 @@ lib-cov:
 
 test-coveralls: lib-cov
 	echo TRAVIS_JOB_ID $(TRAVIS_JOB_ID)
-	@COMPONENT_JSCOVERAGE_COV=1 $(MAKE) test REPORTER=mocha-lcov-reporter | ./node_modules/coveralls/bin/coveralls.js
+	@COMPONENT_JSCOVERAGE_COV=1 $(MAKE) test REPORTER=mocha-lcov-reporter | ./node_modules/.bin/coveralls
 	@rm -rf lib-cov
 
 .PHONY: test
