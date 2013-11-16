@@ -13,4 +13,5 @@ module.exports = plugin;
 
 
 function plugin (builder, options) {
+  return 1 + 1;
 }
