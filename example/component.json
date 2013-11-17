@@ -1,0 +1,10 @@
+{
+  "name": "hello",
+  "dependencies": {
+    "component/assert": "*"
+  },
+  "scripts": [
+    "index.js"
+  ],
+  "main": "index.js"
+}

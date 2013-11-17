@@ -25,7 +25,10 @@
     "expect.js": "*",
     "component-builder": "~0.10.0",
     "mocha-lcov-reporter": "0.0.1",
-    "coveralls": "~2.3.0"
+    "coveralls": "~2.3.0",
+    "component": "~0.18.0",
+    "mocha-phantomjs": "~3.1.6",
+    "json2htmlcov": "~0.1.1"
   },
   "main": "index.js",
   "scripts": {
