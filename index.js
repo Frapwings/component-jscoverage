@@ -16,13 +16,13 @@ var generateJsCoverage = require('jscoverage').process;
 module.exports = plugin;
 
 
-function plugin (builder, options) {
+function plugin (builder) {
   builder.hook('before scripts', function (pkg, next) {
     var scripts = pkg.config.scripts;
     debug('before scripts: %j', scripts);
     if (!scripts) return next();
 
-    var ignore_scripts = [];
+    var mapper = {};
     scripts.forEach(function (script) {
       var ext = path.extname(script);
       if (ext !== '.js') return;
@@ -30,16 +30,13 @@ function plugin (builder, options) {
       var script_path = pkg.path(script);
       var str = read(script_path, 'utf8').toString();
       var content = generateJsCoverage(script_path, str);
-      var coverage_script_path = path.normalize(path.dirname(script_path) 
-        + '/' + path.basename(script_path, ext) + '-cov' + ext);
-      write(coverage_script_path, content, 'utf8');
-      pkg.addFile('scripts', path.basename(script, ext) + '-cov' + ext);
-      ignore_scripts.push(script);
+      mapper[script] = content;
     });
     debug('after scripts: %j', scripts);
 
-    ignore_scripts.forEach(function (script) {
+    Object.keys(mapper).forEach(function (script) {
       pkg.removeFile('scripts', script);
+      pkg.addFile('scripts', script, mapper[script]);
     });
     debug('build scripts: %j', scripts);
 
