@@ -1,0 +1,9 @@
+{
+  "name": "deps",
+  "dependencies": {
+    "component/stack": "*"
+  },
+  "scripts": [
+    "hello.js"
+  ]
+}

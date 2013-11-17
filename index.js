@@ -18,6 +18,8 @@ module.exports = plugin;
 
 function plugin (builder) {
   builder.hook('before scripts', function (pkg, next) {
+    if (!pkg.root) return next();
+
     var scripts = pkg.config.scripts;
     debug('before scripts: %j', scripts);
     if (!scripts) return next();
