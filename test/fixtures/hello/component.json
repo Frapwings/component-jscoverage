@@ -1,0 +1,8 @@
+{
+  "name": "hello",
+  "scripts": [
+    "hello.js",
+    "world.js",
+    "hello.coffee"
+  ]
+}
